@@ -15,6 +15,7 @@ https://robomongo.org/
 https://www.tableau.com/products/desktop/download
 5. MongoDB BI Connector
 https://www.mongodb.com/products/bi-connector
+https://medium.com/@marshallma_67148/connect-mongodb-3-4-with-tableau-2018-01-on-window-10-06-2018-496d04e3e969
 6. Jmeter
 https://jmeter.apache.org/download_jmeter.cgi
 
@@ -28,6 +29,24 @@ MongoDB_InsertCollections.bat
 SQLServer_InsertCollections.bat
 
 Testy i wyniki testów:
+Test Case 1 - Chcemy sprawdzić jak zmieniają się czasy wykonania zapytań na obu baz danych przy użyciu Tableau Desktop wraz z ładowaniem danych testowych.
+
+| Set        | MongoDB           | SQLServer  |
+| ------------- |:-------------:| -----:|
+|  1   |Rendering: 
+        Executing Query: 
+        Connecting To DataSource:
+        Computing Layout:       |  |
+|  2   | |  |
+|  3   | |  |
+|  4   | |  |
+|  5   | |  |
+|  6   | |  |
+|  7   | |  |
+|  8   | |  |
+|  9   | |  |
+|  10  | |  |
+
 1. Mały zestaw Danych
 2. Duży zestaw Danych
 3. SQL Hint 1
