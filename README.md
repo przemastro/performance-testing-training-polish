@@ -28,15 +28,13 @@ Economy Folder
 MongoDB_InsertCollections.bat
 SQLServer_InsertCollections.bat
 
-Testy i wyniki testów:
+Testy i wyniki testów: 
+
 Test Case 1 - Chcemy sprawdzić jak zmieniają się czasy wykonania zapytań na obu baz danych przy użyciu Tableau Desktop wraz z ładowaniem danych testowych.
 
 | Set        | MongoDB           | SQLServer  |
 | ------------- |:-------------:| -----:|
-|  1   |Rendering: 
-        Executing Query: 
-        Connecting To DataSource:
-        Computing Layout:       |  |
+|  1   | Rendering - Executing Query -Connecting To DataSource - Computing Layout | Rendering - Executing Query -Connecting To DataSource - Computing Layout |
 |  2   | |  |
 |  3   | |  |
 |  4   | |  |
