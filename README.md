@@ -1,21 +1,31 @@
 # TestingTraining (Polish)
-SQL Server + MongoDB + Tableau + Jmeter
+SQL Server + MongoDB + Tableau + Python + Jmeter
 
 Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych.
-W tym odcinku porównamy wydajność Tableau korzystającego z dwóch źródeł danych: MongoDB i SQLServer.
+W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
 Instalacja:
 1. SQL Server
+https://www.microsoft.com/en-us/sql-server/sql-server-editions-express
 2. MongoDB
-3. Tableau Desktop
-4. MongoDB BI Connector
-5. Tableau Server
+https://www.mongodb.com/download-center/community
+3. Robo 3T
+https://robomongo.org/
+4. Tableau Desktop
+https://www.tableau.com/products/desktop/download
+5. MongoDB BI Connector
+https://www.mongodb.com/products/bi-connector
 6. Jmeter
+https://jmeter.apache.org/download_jmeter.cgi
 
 Załadowanie danych:
 1. Schemat SQL Server
+Economy.sql
 2. Kolekcje MongoDB
+Economy Folder
 3. Skrypt ETL-owy
+MongoDB_InsertCollections.bat
+SQLServer_InsertCollections.bat
 
 Testy i wyniki testów:
 1. Mały zestaw Danych
@@ -27,5 +37,5 @@ Testy i wyniki testów:
 7. SQL Procedura
 8. SQL indeksy
 9. MongoDB indeksy
-10.Mały ruch
-11.Duży ruch
+10. Mały ruch
+11. Duży ruch
