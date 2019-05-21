@@ -13,20 +13,38 @@ https://www.mongodb.com/download-center/community
 https://robomongo.org/
 4. Tableau Desktop
 https://www.tableau.com/products/desktop/download
-5. MongoDB BI Connector
+5. MongoDB BI Connector i ODBC driver
+
 https://www.mongodb.com/products/bi-connector
-https://medium.com/@marshallma_67148/connect-mongodb-3-4-with-tableau-2018-01-on-window-10-06-2018-496d04e3e969
+
+https://github.com/mongodb/mongo-odbc-driver/releases
 6. Jmeter
 https://jmeter.apache.org/download_jmeter.cgi
 
+
+Konfiguracja i uruchomienie:
+1. Uruchomienie baz danych
+2. Podpięcie Tableau Desktop do SQL Server 
+2.1 dd
+3. Podpięcie Tableau Desktop do MongoDB
+4. Uruchomienie API
+
+
 Załadowanie danych:
 1. Schemat SQL Server
+
 Economy.sql
+
 2. Kolekcje MongoDB
+
 Economy Folder
+
 3. Skrypt ETL-owy
+
 MongoDB_InsertCollections.bat
+
 SQLServer_InsertCollections.bat
+
 
 Testy i wyniki testów: 
 
@@ -45,7 +63,7 @@ Test Case 1 - Chcemy sprawdzić jak zmieniają się czasy wykonania zapytań na 
 
 | Set        | MongoDB           | SQLServer  |
 | ------------- |:-------------:| -----:|
-|  0   | Rendering - Exec Query - DataSource - Layout | Rendering - Exec Query - DataSource - Layout |
+|      | Rendering - Exec Query - DataSource - Computing Layout | Rendering - Exec Query - DataSource - Computing Layout |
 |  1   | |  |
 |  2   | |  |
 |  3   | |  |
@@ -62,7 +80,7 @@ Test Case 2 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy uży
 
 | Set        | MongoDB           | SQLServer  |
 | ------------- |:-------------:| -----:|
-|  0   | Rendering - Exec Query - DataSource - Layout | Rendering - Exec Query - DataSource - Layout |
+|      | Rendering - Exec Query - DataSource - Computing Layout | Rendering - Exec Query - DataSource - Computing Layout |
 |  1   | |  |
 
 
@@ -70,24 +88,24 @@ Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy uży
 
 | Set        | MongoDB           | SQLServer  |
 | ------------- |:-------------:| -----:|
-|  0   | Rendering - Exec Query - DataSource - Layout | Rendering - Exec Query - DataSource - Layout |
+|      | Rendering - Exec Query - DataSource - Computing Layout | Rendering - Exec Query - DataSource - Computing Layout |
 |  1   | |  |
 
 
 Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po zastosowaniu SQL "Hint-ów" i MongoDB "Hintów" .
 
-| Set        | MongoDB           | SQLServer  |
+| Hint        | MongoDB           | SQLServer  |
 | ------------- |:-------------:| -----:|
-|  0   | Rendering - Exec Query - DataSource - Layout | Rendering - Exec Query - DataSource - Layout |
-|  Hint 1   | |  |
-|  Hint 2   | |  |
-|  Hint 3   | |  |
+|      | Rendering - Exec Query - DataSource - Computing Layout | Rendering - Exec Query - DataSource - Computing Layout |
+|  1   | |  |
+|  2   | |  |
+|  3   | |  |
 
 
 Test Case 5 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu.
 
-| Set        | MongoDB           | SQLServer  |
+| API Traffic        | MongoDB           | SQLServer  |
 | ------------- |:-------------:| -----:|
-|  0   |  | |
+|    |  | |
 |  Mały ruch   | |  |
 |  Duży ruch   | |  |
