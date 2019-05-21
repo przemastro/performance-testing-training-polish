@@ -25,14 +25,19 @@ https://www.python.org/download/releases/2.7/ lub w wersji jaką tam lubisz
 
 Konfiguracja i uruchomienie:
 1. Uruchomienie baz danych
+
 1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
+
 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve"
+
 2. Podpięcie Tableau Desktop do SQL Server 
+
 2.1 Uruchom raport "Tableau_YieldCurve_SQLServer.twb". Zostaniesz poproszony o wprowadzenie informacji potrzebnych do połączenia z bazą danych SQL Server. Wzoruj się na załączonym poniżej zrzucie ekranu
 
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/TableauSQLServer.PNG)
 
 3. Podpięcie Tableau Desktop do MongoDB
+
 3.1 Uruchom raport "Tableau_YieldCurve_MongoDB.twb". Podobnie jak poniżej zostaniesz poproszony o wprowadzenie informacji potrzebnych do połączenia z bazą MongoDB. W tym celu musisz wpierw skonfigurować parę rzeczy:
 
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/TableauMongoDB.PNG)
@@ -54,27 +59,24 @@ Po pozytywnym dodaniu użytkownika przechodzimy do Robo3T i sprawdzamy czy istni
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/mongosqld.PNG)
 
 4. Uruchomienie API
+
 4.1. Otwórz konsolę cmd i wykonaj następujące czynności:
+
 4.1.1	"pip install flask"
+
 4.1.2 "pip install flask-restful"
+
 4.2 Będąc w katalogu "rest" wykonaj komendę "python api.py". Pojawią się błędy wynikające z niezainstalowanych bibliotek, które są wykorzystywane przez API. Doinstaluj je używając komendy "pip", w ten sam sposób co powyżej. Instalujemy brakujące biblioteki do skutku.
 
 
 
 Załadowanie danych:
-1. Schemat SQL Server
 
-Economy.sql
+1. Skrypty batch-owe
 
-2. Kolekcje MongoDB
+1.1 MongoDB_InsertCollections.bat
 
-Economy Folder
-
-3. Skrypt ETL-owy
-
-MongoDB_InsertCollections.bat
-
-SQLServer_InsertCollections.bat
+1.2 SQLServer_InsertCollections.bat
 
 
 Testy i wyniki testów: 
