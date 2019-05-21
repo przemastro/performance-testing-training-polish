@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='YieldCurve (Economy)' inline='true' name='federated.0734l671faipge11iie3l084bfcs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Economy (ODBC)' name='genericodbc.1nl22d611nqu781e2mzl10l1a7nh'>
+            <connection class='genericodbc' dbname='Economy' odbc-connect-string-extras='' odbc-dbms-name='MySQL' odbc-driver='MongoDB ODBC 1.2.0 ANSI Driver' odbc-dsn='Economy' odbc-suppress-connection-pooling='' odbc-use-connection-pooling='' port='3307' server='localhost' username='pjag?source=Economy'>
+              <connection-customization class='genericodbc' enabled='false' version='18.1'>
+                <vendor name='MySQL' />
+                <driver name='MongoDB ODBC 1.2.0 ANSI Driver' />
+                <customizations>
+                  <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+                  <customization name='CAP_ISOLATION_LEVEL_READ_COMMITTED' value='no' />
+                  <customization name='CAP_ISOLATION_LEVEL_READ_UNCOMMITTED' value='no' />
+                  <customization name='CAP_ISOLATION_LEVEL_REPEATABLE_READS' value='no' />
+                  <customization name='CAP_ISOLATION_LEVEL_SERIALIZABLE' value='no' />
+                  <customization name='CAP_ODBC_BIND_DETECT_ALIAS_CASE_FOLDING' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
+                  <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
+                  <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
+                  <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
+                  <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
+                  <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
+                  <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_EXECUTED_QUERY' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_PREPARED_QUERY' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SELECT_STAR' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLCOLUMNS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLFOREIGNKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLPRIMARYKEYS_API' value='no' />
+                  <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLSTATISTICS_API' value='no' />
+                  <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
+                  <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
+                  <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
+                  <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='yes' />
+                  <customization name='CAP_QUERY_FROM_REQUIRES_ALIAS' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='no' />
+                  <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='yes' />
+                  <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
+                  <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
+                  <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='no' />
+                  <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
+                  <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='no' />
+                  <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='yes' />
+                  <customization name='CAP_QUERY_SORT_BY_DEGREE' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
+                  <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='yes' />
+                  <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='yes' />
+                  <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
+                  <customization name='CAP_QUERY_TOPSTYLE_TOP' value='no' />
+                  <customization name='CAP_QUERY_TOP_0_METADATA' value='no' />
+                  <customization name='CAP_QUERY_TOP_N' value='yes' />
+                  <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
+                  <customization name='CAP_SELECT_INTO' value='no' />
+                  <customization name='CAP_SELECT_TOP_INTO' value='yes' />
+                  <customization name='CAP_SET_ISOLATION_LEVEL_VIA_ODBC_API' value='no' />
+                  <customization name='CAP_SET_ISOLATION_LEVEL_VIA_SQL' value='no' />
+                  <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='no' />
+                  <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
+                  <customization name='SQL_AGGREGATE_FUNCTIONS' value='127' />
+                  <customization name='SQL_CATALOG_NAME_SEPARATOR' value='.' />
+                  <customization name='SQL_CATALOG_USAGE' value='31' />
+                  <customization name='SQL_COLUMN_ALIAS' value='Y' />
+                  <customization name='SQL_CONVERT_FUNCTIONS' value='0' />
+                  <customization name='SQL_DATETIME_LITERALS' value='7' />
+                  <customization name='SQL_DBMS_NAME' value='MySQL' />
+                  <customization name='SQL_DBMS_VER' value='5.7.12 mongosqld v2.4.1' />
+                  <customization name='SQL_DRIVER_NAME' value='mdbodbc5a.dll' />
+                  <customization name='SQL_DRIVER_ODBC_VER' value='03.80' />
+                  <customization name='SQL_DRIVER_VER' value='01.02.0000' />
+                  <customization name='SQL_IDENTIFIER_QUOTE_CHAR' value='`' />
+                  <customization name='SQL_MAX_IDENTIFIER_LEN' value='192' />
+                  <customization name='SQL_NUMERIC_FUNCTIONS' value='16777215' />
+                  <customization name='SQL_ODBC_INTERFACE_CONFORMANCE' value='2' />
+                  <customization name='SQL_ODBC_VER' value='03.80.0000' />
+                  <customization name='SQL_OJ_CAPABILITIES' value='123' />
+                  <customization name='SQL_QUOTED_IDENTIFIER_CASE' value='3' />
+                  <customization name='SQL_SCHEMA_USAGE' value='0' />
+                  <customization name='SQL_SPECIAL_CHARACTERS' value=' !&quot;#%&amp;&apos;()*+,-.:;&lt;=&gt;?@[\]^`{|}~' />
+                  <customization name='SQL_SQL92_DATETIME_FUNCTIONS' value='7' />
+                  <customization name='SQL_SQL92_NUMERIC_VALUE_FUNCTIONS' value='63' />
+                  <customization name='SQL_SQL92_PREDICATES' value='15879' />
+                  <customization name='SQL_SQL92_RELATIONAL_JOIN_OPERATORS' value='466' />
+                  <customization name='SQL_SQL92_STRING_FUNCTIONS' value='255' />
+                  <customization name='SQL_SQL92_VALUE_EXPRESSIONS' value='15' />
+                  <customization name='SQL_SQL_CONFORMANCE' value='4' />
+                  <customization name='SQL_STRING_FUNCTIONS' value='14647295' />
+                  <customization name='SQL_SYSTEM_FUNCTIONS' value='7' />
+                  <customization name='SQL_TIMEDATE_ADD_INTERVALS' value='0' />
+                  <customization name='SQL_TIMEDATE_DIFF_INTERVALS' value='0' />
+                  <customization name='SQL_TIMEDATE_FUNCTIONS' value='2097151' />
+                  <customization name='SQL_TXN_CAPABLE' value='0' />
+                </customizations>
+              </connection-customization>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='genericodbc.1nl22d611nqu781e2mzl10l1a7nh' name='YieldCurve' table='[YieldCurve]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[_id]</local-name>
+            <parent-name>[YieldCurve]</parent-name>
+            <remote-alias>_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ObservationDate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ObservationDate]</local-name>
+            <parent-name>[YieldCurve]</parent-name>
+            <remote-alias>ObservationDate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21845</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>T10Y2Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[T10Y2Y]</local-name>
+            <parent-name>[YieldCurve]</parent-name>
+            <remote-alias>T10Y2Y</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trend_T10Y2Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Trend_T10Y2Y]</local-name>
+            <parent-name>[YieldCurve]</parent-name>
+            <remote-alias>Trend_T10Y2Y</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='date' datatype-customized='true' name='[ObservationDate]' role='dimension' type='ordinal' />
+      <column datatype='real' datatype-customized='true' name='[T10Y2Y]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.482143' measure-ordering='alphabetic' measure-percentage='0.517857' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='MongoDB'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='YieldCurve (Economy)' name='federated.0734l671faipge11iie3l084bfcs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0734l671faipge11iie3l084bfcs'>
+            <column datatype='date' datatype-customized='true' name='[ObservationDate]' role='dimension' type='ordinal' />
+            <column datatype='real' datatype-customized='true' name='[T10Y2Y]' role='measure' type='quantitative' />
+            <column-instance column='[ObservationDate]' derivation='None' name='[none:ObservationDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[T10Y2Y]' derivation='None' name='[none:T10Y2Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0734l671faipge11iie3l084bfcs].[none:ObservationDate:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0734l671faipge11iie3l084bfcs].[none:ObservationDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.0734l671faipge11iie3l084bfcs].[none:T10Y2Y:qk]</rows>
+        <cols>[federated.0734l671faipge11iie3l084bfcs].[none:ObservationDate:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='MongoDB'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card param='[federated.0734l671faipge11iie3l084bfcs].[none:ObservationDate:qk]' show-domain='false' show-null-ctrls='false' show-readout='false' show-title='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F94B2669-29F8-47BF-A6E9-E7D1B39F97A2}' />
+    </window>
+  </windows>
+</workbook>
