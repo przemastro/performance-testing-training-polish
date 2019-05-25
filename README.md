@@ -81,18 +81,18 @@ Załadowanie danych:
 
 Testy i wyniki testów: 
 
-Test Case 0 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach.
+Intro - Zapoznanie się z bazami i jakie zapytania będziemy wykonywali
+
+Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu SSMS i CMD MongoDB. Zapoznamy się z planami egzekucji zapytań, wykonamy joiny i inne operacje na zapytaniach (hinty)
 
 | Set        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
+|      | |  |
 |  1   | |  |
 |  2   | |  |
-|  3   | |  |
-|  4   | |  |
-|  5   | |  |
 
 
-Test Case 1 - Chcemy sprawdzić jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych.
+Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych. Chcemy sprawdzić jakie zapytania Tableau wysyła do baz danych
 
 | Set        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
@@ -101,20 +101,6 @@ Test Case 1 - Chcemy sprawdzić jak zmieniają się czasy wykonania zapytań na 
 |  2   | |  |
 |  3   | |  |
 |  4   | |  |
-|  5   | |  |
-|  6   | |  |
-|  7   | |  |
-|  8   | |  |
-|  9   | |  |
-|  10  | |  |
-
-
-Test Case 2 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po założeniu indeksów.
-
-| Set        | MongoDB           | SQL Server  |
-| ------------- |:-------------:| -----:|
-|      | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
-|  1   | |  |
 
 
 Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po połączniu głównej tabeli z kolejną tabelą.
@@ -135,10 +121,11 @@ Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy uży
 |  3   | |  |
 
 
-Test Case 5 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu.
+Test Case 5 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter
 
 | API Traffic        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|    |  | |
+|              |  | |
 |  Mały ruch   | |  |
 |  Duży ruch   | |  |
+|  POST        | |  |
