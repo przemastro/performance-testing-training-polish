@@ -83,27 +83,19 @@ Testy i wyniki testów:
 
 Intro - Zapoznanie się z bazami i jakie zapytania będziemy wykonywali
 
-Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu SSMS i CMD MongoDB. Zapoznamy się z planami egzekucji zapytań, wykonamy joiny i inne operacje na zapytaniach (hinty)
 
-| Set        | MongoDB           | SQL Server  |
+Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych. Chcemy sprawdzić jakie zapytania Tableau wysyła do baz danych
+
+| Data Volume        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|      | |  |
-|  1   | |  |
-|  2   | |  |
+|                    | Rendering - Exec Query - DataSource - Layout | Rendering - Exec Query - Data Source - Layout |
+|  250k              | |  |
+|  500k              | |  |
+|  750k              | |  |
+|  1000k             | |  |
 
 
-Test Case 2 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych. Chcemy sprawdzić jakie zapytania Tableau wysyła do baz danych
-
-| Set        | MongoDB           | SQL Server  |
-| ------------- |:-------------:| -----:|
-|      | Rendering - Exec Query - DataSource - Layout | Rendering - Exec Query - Data Source - Layout |
-|  1   | |  |
-|  2   | |  |
-|  3   | |  |
-|  4   | |  |
-
-
-Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po połączniu głównej tabeli z kolejną tabelą.
+Test Case 2 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po połączniu głównej tabeli z kolejną tabelą.
 
 | Set             | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
@@ -112,17 +104,17 @@ Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy uży
 |  CUSTOM QUERY   | |  |
 
 
-Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po zastosowaniu SQL "Hint-ów". MongoDB niestety nie wspiera SQL-owych "hintów" (https://docs.mongodb.com/bi-connector/master/supported-operations/)
+Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po zastosowaniu SQL "Hint-ów". MongoDB niestety nie wspiera SQL-owych "hintów" (https://docs.mongodb.com/bi-connector/master/supported-operations/)
 
-| Hint        | MongoDB           | SQL Server  |
+| JOIN HINTS    | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|      | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
-|  1   | | N/A |
-|  2   | | N/A |
-|  3   | | N/A |
+|         | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
+|  Hash   | | N/A |
+|  Loop   | | N/A |
+|  Mere   | | N/A |
 
 
-Test Case 5 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter. 
+Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter. 
 
 Mały ruch - 1 użytkownik (wątek) i 1 request
 
