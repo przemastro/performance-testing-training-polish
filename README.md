@@ -109,9 +109,9 @@ Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy uży
 | JOIN HINTS    | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
 |         | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
-|  Hash   | | N/A |
-|  Loop   | | N/A |
-|  Mere   | | N/A |
+|  Hash   | N/A | |
+|  Loop   | N/A | |
+|  Mere   | N/A | |
 
 
 Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter. 
