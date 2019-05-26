@@ -20,9 +20,9 @@ def getSQLServerData():
         for x in value:
             data.insert(1, x[0])
             data.insert(2, x[1])
-            data.insert(3, x[2])
-            data.insert(4, x[3]) 
-            data.insert(5, x[4])  
+            #data.insert(3, x[2])
+            data.insert(4, float(x[3])) 
+            data.insert(5, float(x[4]))  
         return data
     except:
         print 'errors in getSQLServerData function'
