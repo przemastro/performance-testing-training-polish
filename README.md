@@ -92,7 +92,7 @@ Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapyta�
 |  2   | |  |
 
 
-Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych. Chcemy sprawdzić jakie zapytania Tableau wysyła do baz danych
+Test Case 2 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych. Chcemy sprawdzić jakie zapytania Tableau wysyła do baz danych
 
 | Set        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
@@ -105,27 +105,32 @@ Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapyta�
 
 Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po połączniu głównej tabeli z kolejną tabelą.
 
-| Set        | MongoDB           | SQL Server  |
+| Set             | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|      | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
-|  1   | |  |
+|                 | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
+|  JOIN           | |  |
+|  CUSTOM QUERY   | |  |
 
 
-Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po zastosowaniu SQL "Hint-ów" i MongoDB "Hintów" .
+Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po zastosowaniu SQL "Hint-ów". MongoDB niestety nie wspiera SQL-owych "hintów" (https://docs.mongodb.com/bi-connector/master/supported-operations/)
 
 | Hint        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
 |      | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
-|  1   | |  |
-|  2   | |  |
-|  3   | |  |
+|  1   | | N/A |
+|  2   | | N/A |
+|  3   | | N/A |
 
 
-Test Case 5 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter
+Test Case 5 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter. 
+
+Mały ruch - 1 użytkownik (wątek) i 1 request
+
+Duży ruch - 2 użytkowników (wątków), 2 requesty co 5 sekund w pętli (1,10)
 
 | API Traffic        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|              |  | |
-|  Mały ruch   | |  |
-|  Duży ruch   | |  |
-|  POST        | |  |
+|  GET - Mały ruch        | |  |
+|  GET - Duży ruch        | |  |
+|  POST - Mały ruch       | |  |
+|  POST - Duży ruch       | |  |
