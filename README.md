@@ -104,14 +104,12 @@ Test Case 2 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy uży
 |  CUSTOM QUERY   | |  |
 
 
-Test Case 3 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po zastosowaniu SQL "Hint-ów". MongoDB niestety nie wspiera SQL-owych "hintów" (https://docs.mongodb.com/bi-connector/master/supported-operations/)
+Test Case 3 - Chcemy sprawdzić czasy wykonania złożonego zapytania na dużych danych w SSMS i CMD
 
-| JOIN HINTS    | MongoDB           | SQL Server  |
+| Set    | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|         | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
-|  Hash   | N/A | |
-|  Loop   | N/A | |
-|  Mere   | N/A | |
+|      |  |  |
+|  1   |  | |
 
 
 Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter. 
@@ -122,7 +120,7 @@ Duży ruch - 2 użytkowników (wątków), 2 requesty co 5 sekund w pętli (1,10)
 
 | API Traffic        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|  GET - Mały ruch        | |  |
-|  GET - Duży ruch        | |  |
-|  POST - Mały ruch       | |  |
-|  POST - Duży ruch       | |  |
+|  GET & SELECT/FIND - Mały ruch            | |  |
+|  GET & SELECT/FIND - Duży ruch            | |  |
+|  GET & LEFT JOIN/LOOKUP - Mały ruch       | |  |
+|  GET & LEFT JOIN/LOOKUP - Duży ruch       | |  |
