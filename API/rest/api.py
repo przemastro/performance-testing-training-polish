@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
-from jsonBuilder import getSQLServerData, getMongoDBData
+from jsonBuilder import getSQLServerData, getSQLServerComplexData, getMongoDBData, getMongoDBComplexData
 import ConfigParser
 from threading import *
 from bson import json_util
@@ -21,13 +21,25 @@ class Get_MongoDBData(Resource):
         data = getMongoDBData()
         return json_util.dumps(data)
 
+class Get_MongoDBComplexData(Resource):
+    def get(self):
+        data = getMongoDBComplexData()
+        return json_util.dumps(data)        
+
 class Get_SQLServerData(Resource):
     def get(self):
         data = getSQLServerData()
         return jsonify(data)
 
+class Get_SQLServerComplexData(Resource):
+    def get(self):
+        data = getSQLServerComplexData()
+        return jsonify(data)        
+
 api.add_resource(Get_MongoDBData, '/getMongoDBData')
+api.add_resource(Get_MongoDBComplexData, '/getMongoDBComplexData')
 api.add_resource(Get_SQLServerData, '/getSQLServerData')
+api.add_resource(Get_SQLServerComplexData, '/getSQLServerComplexData')
 
 
 # Handling COR requests
