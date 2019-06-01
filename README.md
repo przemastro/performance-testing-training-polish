@@ -4,7 +4,8 @@ SQL Server + MongoDB + Tableau + Python + Jmeter
 Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych.
 W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
-Instalacja:
+## Instalacja:
+### Narzędzia
 1. SQL Server
 https://www.microsoft.com/en-us/sql-server/sql-server-editions-express
 2. MongoDB
@@ -21,12 +22,10 @@ https://jmeter.apache.org/download_jmeter.cgi
 7. Python
 https://www.python.org/download/releases/2.7/ lub w wersji jaką tam lubisz
 
+### Konfiguracja i uruchomienie:
+#### 1. Uruchomienie baz danych
 
-
-Konfiguracja i uruchomienie:
-1. Uruchomienie baz danych
-
-1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
+##### 1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
 
 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve"
 
