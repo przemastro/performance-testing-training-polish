@@ -6,6 +6,8 @@
 ##### Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych. W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
 ## INSTALACJA
+### Repozytorium
+#### 1. Sklonuj repozytorium: https://github.com/przemastro/performance-testing-training-polish
 ### Narzędzia:
 #### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express
 #### 2. MongoDB https://www.mongodb.com/download-center/community
