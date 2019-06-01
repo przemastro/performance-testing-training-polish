@@ -1,10 +1,9 @@
-# TestingTraining (Polish)
+# PerformanceTestingTraining (Polish)
 
 ## WPROWADZENIE
-##### SQL Server + MongoDB + Tableau + Python + Jmeter
+##### SQL Server + MongoDB + Tableau Desktop + Python + Jmeter
 
-##### Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych.
-##### W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
+##### Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych. W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
 ## INSTALACJA
 ### Narzędzia:
@@ -66,7 +65,11 @@
 
 #### 1. MongoDB
 
-#### 2 SQL Server
+![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/MongoConsole_ImportData.PNG)
+
+#### 2. SQL Server
+
+![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/SQLServer_Wizard.PNG)
 
 
 ## TESTY
@@ -74,7 +77,7 @@
 ##### Intro - Zapoznanie się z bazami i jakie zapytania będziemy wykonywali
 
 
-#### Test Case 1 - Celem jest sprawdzenie jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych. Chcemy sprawdzić jakie zapytania Tableau wysyła do baz danych
+#### Test Case 1 - Chcemy sprawdzić jak zmieniają się czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop wraz z ładowaniem danych testowych.
 
 | Data Volume        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
@@ -87,7 +90,7 @@
 
 #### Test Case 2 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Tableau Desktop po połączniu głównej tabeli z kolejną tabelą.
 
-| Set             | MongoDB           | SQL Server  |
+| Query             | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
 |                 | Rendering - Exec Query - Data Source - Layout | Rendering - Exec Query - Data Source - Layout |
 |  JOIN           | |  |
@@ -96,20 +99,20 @@
 
 #### Test Case 3 - Chcemy sprawdzić czasy wykonania złożonego zapytania na dużych danych w SSMS i CMD
 
-| Set    | MongoDB           | SQL Server  |
+| Query    | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|  1   |  | |
+|  COUNT   |  | |
+|  COUNT + JOIN   |  | |
 
 
 #### Test Case 4 - Chcemy sprawdzić czasy wykonania zapytań na obu bazach przy użyciu Flask API dla małego i dużego ruchu. Do wygenerowania ruchu użyjemy narzędzia Jmeter. 
 
 ##### Mały ruch - 1 użytkownik (wątek) i 1 request
-
 ##### Duży ruch - 2 użytkowników (wątków), 2 requesty co 5 sekund w pętli (1,10)
 
-| API Traffic        | MongoDB           | SQL Server  |
+| API Method + Query + Traffic        | MongoDB           | SQL Server  |
 | ------------- |:-------------:| -----:|
-|  GET & SELECT/FIND - Mały ruch            | |  |
-|  GET & SELECT/FIND - Duży ruch            | |  |
-|  GET & LEFT JOIN/LOOKUP - Mały ruch       | |  |
-|  GET & LEFT JOIN/LOOKUP - Duży ruch       | |  |
+|  GET + SELECT/FIND + Mały ruch            | |  |
+|  GET + SELECT/FIND + Duży ruch            | |  |
+|  GET + LEFT JOIN/LOOKUP + Mały ruch       | |  |
+|  GET + LEFT JOIN/LOOKUP + Duży ruch       | |  |
