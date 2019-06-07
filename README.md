@@ -9,7 +9,7 @@
 ### Repozytorium
 #### 1. Sklonuj repozytorium: https://github.com/przemastro/performance-testing-training-polish
 ### Narzędzia:
-#### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express
+#### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express (Baza + Management Studio)
 #### 2. MongoDB https://www.mongodb.com/download-center/community
 #### 3. Robo 3T https://robomongo.org/
 #### 4. Tableau Desktop https://www.tableau.com/products/desktop/download
@@ -22,7 +22,7 @@
 
 ##### 1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
 
-##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve"
+##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve" a następnie kolejną "Recession"
 
 #### 2. Podpięcie Tableau Desktop do SQL Server 
 
