@@ -1,28 +1,28 @@
 # PerformanceTestingTraining (Polish)
 
 ## WPROWADZENIE
-##### SQL Server + MongoDB + Tableau Desktop + Python + Jmeter
+##### SQL Server + MongoDB + Tableau Desktop + Python + Jmeter + WINDOWS :)
 
 ##### Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych. W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
 ## INSTALACJA
 ### Repozytorium
 #### 1. Sklonuj repozytorium: https://github.com/przemastro/performance-testing-training-polish
-### Narzędzia:
-#### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express (Baza + Management Studio)
-#### 2. MongoDB https://www.mongodb.com/download-center/community
-#### 3. Robo 3T https://robomongo.org/
-#### 4. Tableau Desktop https://www.tableau.com/products/desktop/download
-#### 5. MongoDB BI Connector i ODBC driver https://www.mongodb.com/products/bi-connector i https://github.com/mongodb/mongo-odbc-driver/releases
-#### 6. Jmeter https://jmeter.apache.org/download_jmeter.cgi
-#### 7. Python https://www.python.org/download/releases/2.7/ lub w wersji jaką lubisz
+### Narzędzia (w nawiasie przykładowa instalka):
+#### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express (SQLServer2017-SSEI-Expr i SSMS 18)
+#### 2. MongoDB https://www.mongodb.com/download-center/community (mongodb-win32-x86_64-2008plus-ssl-4.0.10-signed)
+#### 3. Robo 3T https://robomongo.org/ (robo3T-1.3.1-windows-x86_64-7419c406)
+#### 4. Tableau Desktop https://www.tableau.com/products/desktop/download (TableauDesktop-64bit-2019-2-0)
+#### 5. MongoDB BI Connector i ODBC driver https://www.mongodb.com/products/bi-connector (mongodb-bi-win32-x86_64-v2.11.0) i https://github.com/mongodb/mongo-odbc-driver/releases (mongodb-connector-odbc-1.2.0-win-64-bit)
+#### 6. Jmeter https://jmeter.apache.org/download_jmeter.cgi (apache-jmeter-5.1.1.zip)
+#### 7. Python https://www.python.org/download/releases/ (python-3.7.3-amd64)
 
 ### Konfiguracja i uruchomienie:
 #### 1. Uruchomienie baz danych
 
 ##### 1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
 
-##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve" a następnie kolejną "Recession"
+##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Jeśli komenda mongod nie jest rozpoznawalna należy ustawić zmienną środowiskową: 'Panel Sterowania' -> 'System i zabezpieczenia' -> 'System' -> 'Zaawansowane ustawienia systemu' -> 'Zmienne środowiskowe' -> 'Path' i dodajemy ścieżkę do katalogu 'MongoDB\Server\4.0\bin'. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve" a następnie kolejną "Recession"
 
 #### 2. Podpięcie Tableau Desktop do SQL Server 
 
