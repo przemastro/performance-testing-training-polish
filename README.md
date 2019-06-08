@@ -1,30 +1,32 @@
 # PerformanceTestingTraining (Polish)
 
 ## WPROWADZENIE
-##### SQL Server + MongoDB + Tableau Desktop + Python + Jmeter
+##### SQL Server + MongoDB + Tableau Desktop + Python + Jmeter + WINDOWS :)
 
 ##### Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych. W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
 ## INSTALACJA
-### Narzędzia:
-#### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express
-#### 2. MongoDB https://www.mongodb.com/download-center/community
-#### 3. Robo 3T https://robomongo.org/
-#### 4. Tableau Desktop https://www.tableau.com/products/desktop/download
-#### 5. MongoDB BI Connector i ODBC driver https://www.mongodb.com/products/bi-connector i https://github.com/mongodb/mongo-odbc-driver/releases
-#### 6. Jmeter https://jmeter.apache.org/download_jmeter.cgi
-#### 7. Python https://www.python.org/download/releases/2.7/ lub w wersji jaką lubisz
+### Repozytorium
+#### 1. Sklonuj repozytorium: https://github.com/przemastro/performance-testing-training-polish
+### Narzędzia (w nawiasie przykładowa instalka):
+#### 1. SQL Server https://www.microsoft.com/en-us/sql-server/sql-server-editions-express (SQLServer2017-SSEI-Expr i SSMS)
+#### 2. MongoDB https://www.mongodb.com/download-center/community (mongodb-win32-x86_64-2008plus-ssl-4.0.10-signed)
+#### 3. Robo 3T https://robomongo.org/ (robo3T-1.3.1-windows-x86_64-7419c406)
+#### 4. Tableau Desktop https://www.tableau.com/products/desktop/download (TableauDesktop-64bit-2019-2-0)
+#### 5. MongoDB BI Connector i ODBC driver https://www.mongodb.com/products/bi-connector (https://info-mongodb-com.s3.amazonaws.com/mongodb-bi/v2/mongodb-bi-win32-x86_64-v2.4.1.msi) i https://github.com/mongodb/mongo-odbc-driver/releases (mongodb-connector-odbc-1.0.0-win-64-bit)
+#### 6. Jmeter https://jmeter.apache.org/download_jmeter.cgi (apache-jmeter-5.1.1.zip)
+#### 7. Python https://www.python.org/download/releases/ (https://www.python.org/downloads/release/python-2716/)
 
 ### Konfiguracja i uruchomienie:
 #### 1. Uruchomienie baz danych
 
-##### 1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
+##### 1.1 SQL Server - otwórz management studio. Prawym przyciskiem na 'Databases' tworzymy nową bazę, którą nazwiemy 'Economy'. Natępnie otwieramy na tej bazie 'New Query' i tworzymy tabele zapytaniem "Economy.sql".
 
-##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve"
+##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Jeśli komenda mongod nie jest rozpoznawalna należy ustawić zmienną środowiskową: 'Panel Sterowania' -> 'System i zabezpieczenia' -> 'System' -> 'Zaawansowane ustawienia systemu' -> 'Zmienne środowiskowe' -> 'Path' i dodajemy ścieżkę do katalogu 'MongoDB\Server\4.0\bin'. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Rozwiń bazę "Economy" i kliknij następnie prawym przyciskiem na bazę "Collections" i dodaj pierwszą kolekcję "YieldCurve" a następnie kolejną "Recession"
 
 #### 2. Podpięcie Tableau Desktop do SQL Server 
 
-##### 2.1 Uruchom raport "Tableau_YieldCurve_SQLServer.twb". Zostaniesz poproszony o wprowadzenie informacji potrzebnych do połączenia z bazą danych SQL Server. Wzoruj się na załączonym poniżej zrzucie ekranu
+##### 2.1 Uruchom raport "Tableau_YieldCurve_SQLServer.twb". Zostaniesz poproszony o wprowadzenie informacji potrzebnych do połączenia z bazą danych SQL Server. Wzoruj się na załączonym poniżej zrzucie ekranu. Jeśli nie daj Boże pojawi się błąd w stylu Driver's SQLAllocHandle on SQL_HANDLE_ENV Failed, oznacza to ni mniej ni więcej niekompatybilność SQL Server z SQL Server ODBC driver. Doinstaluj odpowiednią wersję.
 
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/TableauSQLServer.PNG)
 
@@ -58,7 +60,7 @@
 
 ##### 4.1.2 "pip install flask-restful"
 
-##### 4.2 Będąc w katalogu "rest" wykonaj komendę "python api.py". Pojawią się błędy wynikające z niezainstalowanych bibliotek, które są wykorzystywane przez API. Doinstaluj je używając komendy "pip", w ten sam sposób co powyżej. Instalujemy brakujące biblioteki do skutku.
+##### 4.2 Będąc w katalogu "rest" wykonaj komendę "python api.py". Pojawią się błędy wynikające z niezainstalowanych bibliotek, które są wykorzystywane przez API. Doinstaluj je używając komendy "pip", w ten sam sposób co powyżej. Instalujemy brakujące biblioteki do skutku :)
 
 
 ## ZAŁADOWANIE DANYCH
@@ -71,6 +73,9 @@
 
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/SQLServer_Wizard.PNG)
 
+Przykład:
+ INSERT INTO YieldCurve(ObservationDate, ObservationDateByMinute, T10Y3M, T10Y2Y) 
+ SELECT [Column 0], [Column 1], [Column 2], [Column 3] FROM [dbo].[oneMillionTestData-1]
 
 ## TESTY
 
