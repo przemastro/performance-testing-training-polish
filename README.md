@@ -73,6 +73,9 @@
 
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/SQLServer_Wizard.PNG)
 
+Przykład:
+ INSERT INTO YieldCurve(ObservationDate, ObservationDateByMinute, T10Y3M, T10Y2Y) 
+ SELECT [Column 0], [Column 1], [Column 2], [Column 3] FROM [dbo].[oneMillionTestData-1]
 
 ## TESTY
 
