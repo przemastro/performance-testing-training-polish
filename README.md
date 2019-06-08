@@ -20,9 +20,9 @@
 ### Konfiguracja i uruchomienie:
 #### 1. Uruchomienie baz danych
 
-##### 1.1 SQL Server - otwórz management studio i w nowym oknie (New Query) odpal zapytanie "Economy.sql". Zapytanie powinno utworzyć nową bazę "Economy"
+##### 1.1 SQL Server - otwórz management studio. Prawym przyciskiem na 'Databases' tworzymy nową bazę, którą nazwiemy 'Economy'. Natępnie otwieramy na tej bazie 'New Query' i tworzymy tabele zapytaniem "Economy.sql".
 
-##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Jeśli komenda mongod nie jest rozpoznawalna należy ustawić zmienną środowiskową: 'Panel Sterowania' -> 'System i zabezpieczenia' -> 'System' -> 'Zaawansowane ustawienia systemu' -> 'Zmienne środowiskowe' -> 'Path' i dodajemy ścieżkę do katalogu 'MongoDB\Server\4.0\bin'. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Kliknij następnie prawym przyciskiem na bazę "Economy" i dodaj pierwszą kolekcję "YieldCurve" a następnie kolejną "Recession"
+##### 1.2 MongoDB - uruchom linię poleceń i poleceniem mongod odpal bazę na porcie 20717. Jeśli komenda mongod nie jest rozpoznawalna należy ustawić zmienną środowiskową: 'Panel Sterowania' -> 'System i zabezpieczenia' -> 'System' -> 'Zaawansowane ustawienia systemu' -> 'Zmienne środowiskowe' -> 'Path' i dodajemy ścieżkę do katalogu 'MongoDB\Server\4.0\bin'. Następnie uruchom klienta Robo3T. Utwórz nowe połączenie. W lewym menu na nowo otwartym połączeniu kliknij prawym przyciskiem myszy i stwórz nową bazę "Economy". Rozwiń bazę "Economy" i kliknij następnie prawym przyciskiem na bazę "Collections" i dodaj pierwszą kolekcję "YieldCurve" a następnie kolejną "Recession"
 
 #### 2. Podpięcie Tableau Desktop do SQL Server 
 
