@@ -74,7 +74,7 @@ def getMongoDBComplexData():
                 "foreignField": "ObservationDate", 
                 "as": "Recession"
               }
-            }
+            } 
         ]) 
         data = []
         for x in mycoll:
