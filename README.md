@@ -26,7 +26,7 @@
 
 #### 2. Podpięcie Tableau Desktop do SQL Server 
 
-##### 2.1 Uruchom raport "Tableau_YieldCurve_SQLServer.twb". Zostaniesz poproszony o wprowadzenie informacji potrzebnych do połączenia z bazą danych SQL Server. Wzoruj się na załączonym poniżej zrzucie ekranu
+##### 2.1 Uruchom raport "Tableau_YieldCurve_SQLServer.twb". Zostaniesz poproszony o wprowadzenie informacji potrzebnych do połączenia z bazą danych SQL Server. Wzoruj się na załączonym poniżej zrzucie ekranu. Jeśli nie daj Boże pojawi się błąd w stylu Driver's SQLAllocHandle on SQL_HANDLE_ENV Failed, oznacza to ni mniej ni więcej niekompatybilność SQL Server z SQL Server ODBC driver. Doinstaluj odpowiednią wersję.
 
 ![Dashboard](https://github.com/przemastro/performance-testing-training-polish/blob/master/TableauSQLServer.PNG)
 
