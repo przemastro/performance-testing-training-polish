@@ -1,7 +1,11 @@
 # PerformanceTestingTraining (Polish)
 
 ## WPROWADZENIE
-##### SQL Server + MongoDB + Tableau Desktop + Python + Jmeter + WINDOWS :)
+[![GitHub issues](https://img.shields.io/github/issues/przemastro/performance-testing-training-polish)](https://github.com/przemastro/performance-testing-training-polish/issues)
+[![GitHub forks](https://img.shields.io/github/forks/przemastro/performance-testing-training-polish)](https://github.com/przemastro/performance-testing-training-polish/network)
+[![GitHub stars](https://img.shields.io/github/stars/przemastro/performance-testing-training-polish)](https://github.com/przemastro/performance-testing-training-polish/stargazers)
+[![SQL Server version](https://img.shields.io/badge/TSQL-2012-%23ccc)](https://github.com/przemastro/performance-testing-training-polish)
+[![Python version](https://img.shields.io/badge/Python-2.7.x-%233572A5)](https://github.com/przemastro/performance-testing-training-polish)
 
 ##### Nie za krótkie wprowadzenie do testowania wydajności systemów opartych na bazach relacyjnych i nierelacyjnych. W tym odcinku porównamy wydajność baz SQLServer i MongoDB korzystając z klienta Tableau i API Flask (Python).
 
